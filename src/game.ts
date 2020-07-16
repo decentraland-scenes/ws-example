@@ -11,7 +11,7 @@ export async function joinSocketsServer() {
   log(`You are in the realm: `, realm.displayName)
   // connect to ws server
   socket = new WebSocket(
-    'wss://64-225-45-232.nip.io/wsecho/' + realm.displayName
+    'wss://64-225-45-232.nip.io/broadcast/' + realm.displayName
   )
   // listen for incoming ws messages
   socket.onmessage = function (event) {
