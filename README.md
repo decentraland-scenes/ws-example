@@ -6,8 +6,6 @@ A basic scene that uses a WebSockets server to sync changes between players. Whe
 
 The scene relies on a [broadcast websockets server](https://github.com/decentraland-scenes/ws-broadcast) that broadcasts all messages that are sent to it to all players.
 
-
-
 ## Try it out
 
 **Install the CLI**
@@ -20,7 +18,7 @@ npm i -g decentraland
 
 **Previewing the scene**
 
-Download this example and navigate to its directory, then run:
+Download this example and navigate to the `scene` directory, then run:
 
 ```
 $:  dcl start
@@ -32,9 +30,8 @@ Any dependencies are installed and then the CLI opens the scene in a new browser
 
 By default, the scene relies on an already deployed server on that can be reached on `wss://64-225-45-232.nip.io/`
 
-To instead run the server locally, download [this other repo](https://github.com/decentraland-scenes/ws-broadcast) and cd to its main folder on a separate command line window.
+To instead run the server locally, on a separate command line window, navigate to the `server` directory and run:
 
-To strart the server, run:
 ```
 npm run start
 ```
@@ -48,11 +45,9 @@ socket = new WebSocket(
   )
 ```
 
-
 **Scene Usage**
 
 Click on the cubes to see them change color. If you open multiple tabs to the same preview, you should see that all tabs respond to the changes that other players do too. These messages are travelling via WebSockets.
-
 
 Learn more about how to build your own scenes in our [documentation](https://docs.decentraland.org/) site.
 
@@ -61,4 +56,3 @@ If something doesn’t work, please [file an issue](https://github.com/decentral
 ## Copyright info
 
 This scene is protected with a standard Apache 2 licence. See the terms and conditions in the [LICENSE](/LICENSE) file.
-
