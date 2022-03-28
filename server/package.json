@@ -1,6 +1,8 @@
 {
   "name": "dcl-websocket-broadcast",
-  "maintainers": ["Kyllian LE BORGNE ROPERCH"],
+  "maintainers": [
+    "Kyllian LE BORGNE ROPERCH"
+  ],
   "version": "1.0.0",
   "description": "Simple broadcasting websocket server",
   "main": "src/index.ts",
